@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/setmain"
+    android:gravity="center"
+    tools:context=".tenant_register_activity">
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@drawable/app_logo_final" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:background="@drawable/login_layout"
+        android:orientation="vertical">
+
+        <TextView
+            android:text="REGISTER"
+            android:textSize="26sp"
+            android:textStyle="bold|italic"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:padding="16dp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:background="@drawable/edittext_background"
+            android:padding="23dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:hint="Name"
+            android:drawableStart="@drawable/user"
+            android:drawablePadding="5dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/dark_grey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/enter_email"
+            android:background="@drawable/edittext_background"
+            android:padding="23dp"
+            android:drawableStart="@drawable/email"
+            android:drawablePadding="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/dark_grey"
+            android:hint="Email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/enter_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/lock"
+            android:drawablePadding="5dp"
+            android:hint="Password"
+            android:textColor="@color/black"
+            android:textColorHint="@color/dark_grey"
+            android:padding="23dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/edittext_background"
+            android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/register_button"
+        android:text="Register"
+        android:layout_width="match_parent"
+        android:padding="14dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/button_background"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/loginNow"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:gravity="center"
+            android:text="Click to login"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</LinearLayout>

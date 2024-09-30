@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".createListings">
+
+    <EditText
+        android:id="@+id/enterName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:background="@drawable/edittext_background"
+        android:padding="15dp"
+        android:layout_margin="4dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/dark_grey" />
+
+    <EditText
+        android:id="@+id/enterDescription"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="7dp"
+        android:hint="Description"
+        android:background="@drawable/edittext_background"
+        android:padding="10dp"
+        android:layout_margin="4dp"
+        android:maxLines="5"
+        android:textColor="@color/black"
+        android:textColorHint="@color/dark_grey" />
+
+    <EditText
+        android:id="@+id/enterLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_background"
+        android:padding="10dp"
+        android:layout_margin="4dp"
+        android:hint="Location"
+        android:textColor="@color/black"
+        android:textColorHint="@color/dark_grey"/>
+
+    <EditText
+        android:id="@+id/entercoordinates"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_background"
+        android:padding="10dp"
+        android:layout_margin="4dp"
+        android:hint="Co-ordinates"
+        android:textColor="@color/black"
+        android:textColorHint="@color/dark_grey"/>
+
+    <EditText
+        android:id="@+id/enterPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/edittext_background"
+        android:padding="10dp"
+        android:layout_margin="4dp"
+        android:hint="Price"
+        android:textColor="@color/black"
+        android:textColorHint="@color/dark_grey"/>
+
+    <EditText
+        android:id="@+id/enterAmenities"
+        android:layout_width="match_parent"
+        android:layout_height="77dp"
+        android:background="@drawable/edittext_background"
+        android:padding="10dp"
+        android:layout_margin="4dp"
+        android:layout_marginTop="7dp"
+        android:hint="Amenities"
+        android:textColor="@color/black"
+        android:textColorHint="@color/dark_grey" />
+
+    <EditText
+        android:id="@+id/enterPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/edittext_background"
+        android:padding="10dp"
+        android:layout_margin="4dp"
+        android:hint="Contact number"
+        android:inputType="phone"
+        android:textColor="@color/black"
+        android:textColorHint="@color/dark_grey"/>
+    <Button
+        android:id="@+id/enterimg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:layout_margin="5dp"
+        android:backgroundTint="@color/setmain2"
+        android:text="Choose image"
+        android:textColor="@color/black"
+        app:cornerRadius="17dp"/>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="7dp"
+        />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:layout_margin="5dp"
+        android:backgroundTint="@color/setmain"
+        app:cornerRadius="17dp"
+        android:layout_marginTop="7dp"
+        android:text="Create Listing"/>
+
+
+</LinearLayout>

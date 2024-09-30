@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/setmain"
+    android:gravity="center"
+    tools:context=".tenant_login_activity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="194dp"
+        android:src="@drawable/app_logo_final" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/login_layout"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="LOGIN"
+            android:textColor="@color/black"
+            android:textSize="26sp"
+            android:textStyle="bold|italic" />
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/enter_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:drawableStart="@drawable/email"
+            android:drawablePadding="5dp"
+            android:background="@drawable/edittext_background"
+            android:hint="Email"
+            android:padding="23dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/dark_grey" />
+
+        <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/enter_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:drawableStart="@drawable/lock"
+                android:drawablePadding="5dp"
+                android:hint="Password"
+                android:padding="23dp"
+                android:textColorHint="@color/dark_grey"
+                android:background="@drawable/edittext_background"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/login_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:layout_margin="16dp"
+            android:background="@drawable/button_background"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:text="Login" />
+
+
+        <TextView
+            android:text="Don't Have An Account? Create Account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:textStyle="italic"
+            android:textSize="20sp"
+            />
+
+        <Button
+            android:id="@+id/reg_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:layout_margin="16dp"
+            android:background="@drawable/button_background"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:text="Register" />
+    </LinearLayout>
+
+
+</LinearLayout>

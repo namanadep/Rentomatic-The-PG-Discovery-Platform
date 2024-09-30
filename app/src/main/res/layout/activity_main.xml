@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#481D38"
+    android:visibility="visible">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="262dp"
+        android:src="@drawable/app_logo_final" />
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:text="Welcome To Rentomatic - PG and Apartment Renting Platform"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:layout_marginBottom="20dp"
+        android:textStyle="bold"
+         />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_layout"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <Button
+        android:id="@+id/tenantsButton"
+        android:layout_width="191dp"
+        android:layout_height="79dp"
+        android:layout_marginTop="96dp"
+        android:backgroundTint="@color/setmain2"
+        android:padding="16dp"
+        android:text="Tenants"
+        android:textColor="#fff"
+        android:textSize="24sp"
+        app:cornerRadius="17dp"
+         />
+
+    <Button
+        android:id="@+id/landlordButton"
+        android:layout_width="194dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="48dp"
+        android:backgroundTint="@color/setmain2"
+        android:padding="16dp"
+        android:text="Owner"
+        android:textColor="#fff"
+        android:textSize="24sp"
+        app:cornerRadius="17dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tenantsButton"
+        app:layout_constraintVertical_bias="0.837" />
+</LinearLayout>
+
+
+
+</LinearLayout>

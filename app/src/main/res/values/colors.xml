@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="set1">#192E5B</color>
+    <color name="set2">#1D65A6</color>
+    <color name="set3">#72A2C0</color>
+    <color name="set4">#00743F</color>
+    <color name="set5">#F2A104</color>
+    <color name="setmain">#481d38</color>
+    <color name="setmain2">#D4AF37</color>
+    <color name="setmain3">#EAA783</color>
+    <color name="red">#b54747</color>
+    <color name="green">#69914a</color>
+
+    <color name="storm">#0c2431</color>
+    <color name="teal">#194a50</color>
+    <color name="sunburst">#d37556</color>
+    <color name="sand">#d8a28c</color>
+    <color name="cloud">#e1dad2</color>
+ // LOGIN PAGE COLOURS
+    <color name="light_grey">#DEE1E9</color>
+    <color name="dark_grey">#9DA0A2</color>
+    <color name="dark_orange">#FF4E2E43</color>
+    <color name="dark_orange1">#F4EBe3</color>
+
+
+</resources>
