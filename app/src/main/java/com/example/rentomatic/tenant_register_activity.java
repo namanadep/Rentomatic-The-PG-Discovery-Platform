@@ -35,7 +35,6 @@ public class tenant_register_activity extends AppCompatActivity {
     @Override
     public void onStart() {
         super.onStart();
-        // Check if user is signed in (non-null) and update UI accordingly.
         FirebaseUser currentUser = mAuth.getCurrentUser();
         if(currentUser != null){
             Intent intent = new Intent(tenant_register_activity.this, listings.class);
@@ -89,7 +88,6 @@ public class tenant_register_activity extends AppCompatActivity {
                                     Intent intent = new Intent(tenant_register_activity.this, listings.class);
                                     startActivity(intent);
                                 } else {
-                                    // If sign in fails, display a message to the user.
                                     Toast.makeText(tenant_register_activity.this, "Authentication failed.",
                                             Toast.LENGTH_SHORT).show();
                                 }
@@ -100,7 +98,6 @@ public class tenant_register_activity extends AppCompatActivity {
 
     }
 
-    // Handle the result of the sign-in process
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
@@ -108,12 +105,8 @@ public class tenant_register_activity extends AppCompatActivity {
             if (resultCode == RESULT_OK) {
                 Toast.makeText(this, "Registered Successfully", Toast.LENGTH_SHORT).show();
                 FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
-                // Handle the signed-in user (e.g., update UI)
-                // You can handle the signed-in user here or pass it to another activity
             } else {
                 Toast.makeText(this, "Registration Failed", Toast.LENGTH_SHORT).show();
-                // If response is null, the user canceled the sign-in process using the back button
-                // Handle error cases or simply toast a message
             }
         }
     }
